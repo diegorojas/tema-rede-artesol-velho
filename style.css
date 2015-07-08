@@ -1,0 +1,1276 @@
+/******************************************************************
+
+Theme Name: Rede Artesol pelo Comércio Justo
+
+Author: Minimo Design
+
+Version: 1.0
+
+
+
+******************************************************************/
+
+
+
+/******************************************************************
+
+GENERAL LAYOUT STYLES
+
+******************************************************************/
+
+
+
+body { background: url(img/bg.jpg); }
+
+
+
+/* floats */
+
+.left { float: left; }
+
+.right { float: right; }
+
+	
+
+/* text alignment */
+
+.text-left { text-align: left; }
+
+.text-center { text-align: center; }
+
+.text-right { text-align: right; }
+
+
+
+/* highlighting search term on search page */
+
+mark, .search-term { background: #EBE16F; }
+
+
+
+/* alerts & notices */
+
+.help, .info, .error, .success { margin: 10px; padding: 5px 18px; border: 1px solid #cecece; }
+
+.help { border-color: #E0C618; background: #EBE16F; }
+
+.info { border-color: #92cae4; background: #d5edf8; }
+
+.error { border-color: #fbc2c4; background: #fbe3e4; }
+
+.success { border-color: #c6d880; background: #e6efc2; } 
+
+	
+
+/******************************************************************
+
+LINK STYLES
+
+******************************************************************/
+
+
+
+a, a:visited { color: #f01d4f; }
+
+a:hover, a:focus { color: #f05e81; }
+
+a:active {} /* on click */
+
+a:link { -webkit-tap-highlight-color : rgba(0,0,0,0); /* this highlights links on Iphones / iPads */ }
+
+
+
+/******************************************************************
+
+TEXT SELECTION STYLES
+
+******************************************************************/
+
+
+
+/* Highlighted Text */
+
+::selection { 
+
+	background: #6fc2f6; 
+
+	color:#fff; 
+
+	text-shadow : none; 
+
+}
+
+
+
+/* Firefox */
+
+::-moz-selection { 
+
+	background: #6fc2f6; 
+
+	color:#fff; 
+
+	text-shadow : none; 
+
+}
+
+
+
+/******************************************************************
+
+WORDPRESS BODY CLASSES
+
+want to style a page via body class? go ahead
+
+******************************************************************/
+
+
+
+.rtl {}
+
+.home {} /* home page */
+
+.blog {} 
+
+.archive {} /* archive page */
+
+.date {} /* date archive page */
+
+	.date-paged-1 {} /* replace the number to the corresponding page number */
+
+.search {} /* search page */
+
+	.search-results {} /* search result page */
+
+	.search-no-results {} /* no results search page */
+
+	.search-paged-1 {} /* individual paged search (i.e. body.search-paged-3) */
+
+.error404 {} /* 404 page */
+
+.single {} /* single post page */
+
+	.postid-1 {} /* individual post page by id (i.e. body.postid-73) */
+
+	.single-paged-1 {} /* individual paged single (i.e. body.single-paged-3) */
+
+.attachment {} /* attatchment page */
+
+	.attachmentid-1 {} /* individual attatchment page (i.e. body.attachmentid-763) */
+
+	.attachment-mime-type {} /* style mime type pages */
+
+.author {} /* author page */
+
+	.author-nicename {} /* user nicename (i.e. body.author-samueladams) */
+
+	.author-paged-1 {} /* paged author archives (i.e. body.author-paged-4) for page 4 */
+
+.category {} /* category page */
+
+	.category-1 {} /* individual category page (i.e. body.category-6) */
+
+	.category-paged-1 {} /* replace the number to the corresponding page number */
+
+.tag {} /* tag page */
+
+	.tag-slug {} /* individual tag page (i.e. body.tag-news) */
+
+	.tag-paged-1 {} /* replace the number to the corresponding page number */
+
+.page-template {} /* custom page template page */
+
+	.page-template-page-php {} /* individual page template (i.e. body.page-template-contact-php */
+
+	.page-paged-1 {} /* replace the number to the corresponding page number */
+
+	.page-parent {}
+
+	.page-child {}
+
+	.parent-pageid-1 {} /* replace the number to the corresponding page number */
+
+.logged-in {} /* if user is logged in */
+
+.paged {} /* paged items like search results or archives */
+
+	.paged-1 {} /* individual paged (i.e. body.paged-3) */
+
+
+
+/******************************************************************
+
+HEADLINES & TITLES
+
+******************************************************************/
+
+
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 { font-family: sans-serif; font-weight: 500;}
+
+h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {text-decoration: none;}
+
+h1, .h1 {}
+
+h2, .h2 {}
+
+h3, .h3 {}
+
+h4, .h4 {}
+
+h5, .h5 {}
+
+
+
+
+
+/******************************************************************
+
+HEADER SYTLES
+
+******************************************************************/
+
+
+
+header[role=banner] {background:url(img/hd.jpg); height:219px;}
+
+	#inner-header {width:930px; margin: 0 auto;}
+
+	a.back-artesol {color:#fff; font-size:13px; margin-left:630px; margin-bottom: 20px; padding: 10px 0 0 0; display:block; clear:both; text-decoration:none;}
+
+		a.back-artesol:hover {color:#bf4f1d}
+
+	a.logo {background:url(http://artesol.org.br/rede/wp-content/uploads/2014/09/novo-logo-rede-artesol-306x104.jpg) no-repeat; width:306px; height:104px; display:block; float:left; margin: 10px 0 0 0;}
+
+	.realizacao {float: right; background: url(http://artesol.org.br/rede/wp-content/uploads/2012/05/realizacao.jpg) no-repeat top right; width: 221px; height: 119px; margin-top: 5px;}
+
+	
+
+
+
+/******************************************************************
+
+NAVIGATION STYLES
+
+(Main Navigation)
+
+******************************************************************/
+
+nav[role=navigation] {clear:both; width:962px; margin: 0 auto;}
+
+
+
+	nav[role=navigation] ul.menu {margin: 16px 0 0 0}
+
+		nav[role=navigation] ul.menu li {float: left; font: 10px Arial, Helvetica, sans-serif; text-transform:uppercase;}
+
+			nav[role=navigation] ul.menu li a {color:#fff; text-decoration:none; display:block; padding: 8px 16px;  }
+
+				nav[role=navigation] ul.menu li a:hover {background:#f47920; text-decoration:none; color:#315148;}
+
+				
+
+				nav[role=navigation] ul.menu li:first-child a {}
+
+				
+
+		nav[role=navigation] ul.menu li.current-menu-item a, 
+
+		nav[role=navigation] ul.menu li.current_page_item a,
+
+		nav[role=navigation] ul.menu li.current-page-ancestor a {}
+
+		
+
+		nav[role=navigation] ul.menu li#menu-item-147 {float: right; background:#315148; margin: -1px 10px 0 0;}
+
+		
+
+
+
+		/* sub menus */
+
+
+
+/******************************************************************
+
+POSTS & CONTENT STYLES
+
+******************************************************************/
+
+
+
+#carrossel {background: url(img/bg-prod-rolet.jpg) repeat-y; width:950px; height:183px; margin: 12px auto 2px auto; position:relative;}
+
+	#carrossel-bt {background:url(img/bg-prod-role-bot.jpg); width:950px; height:16px; position:absolute; bottom:0;left:0;}
+
+	#carrossel-tp {background:url(img/bg-prod-role-tp.jpg); width:950px; height:8px; position:absolute; top:0;left:0;}
+
+	
+
+	ul#slide-hm {list-style:none;}
+
+	ul#slide-hm li {float:left;}
+
+
+
+.box-hm {width:208px; height:370px; float: left; position: relative; background: url(img/bg-box-hm.jpg) no-repeat top left;margin-left:4px; border-right:1px solid #6e6e6e; padding-right: 7px}
+
+	#color-22 {background-color:#4976b9; width:203px; height:360px;margin: 2px 0 0 4px}
+
+	#color-20 {background-color:#448875; width:203px; height:360px;margin: 2px 0 0 4px}
+
+	#color-24 {background-color:#c95d1a; width:203px; height:360px;margin: 2px 0 0 4px}
+
+	
+
+	.box-hm img {margin: 12px 0 0 12px}
+
+	a.img-hm-tb {width:177px; height:177px; position:absolute; top:14px; left:16px;}
+
+	.box-hm h3 {font:bold 25px/29px Arial, Helvetica, sans-serif; color:#fff; width:179px; margin:6px 0 6px 12px;} 
+
+	.box-hm p {color:#333; font:12px/18px Arial, Helvetica, sans-serif; width: 160px; margin: 6px 0 0 24px }
+
+
+
+#content {background:url(img/bg-content.jpg) repeat-y; width:909px; margin:0 auto; padding: 0 10px 30px 35px; overflow:auto;/* position:relative;*/}
+
+	#content-hd {background: url(img/bg-content-tp.jpg); width:954px; height:21px; margin: 0 auto;}
+
+	#content-bt {background: url(img/bg-content-bt.jpg); width:954px; height:22px; margin:0 auto;}
+
+	
+
+	#parceiros {/*background:url(img/parceiros.jpg); width:624px; height:93px; clear:both; margin: 12px 0 0 48px;*/}
+
+		
+
+	h1.rede-title {font: bold 28px Arial, Helvetica, sans-serif; color:#305148; margin: 12px 0 0 24px}
+
+	#botao-post {width:600px; clear:both; overflow: auto; border-bottom:1px solid #6e6e6e; margin-left: 24px;}
+
+	a.pfs-post-link {padding: 4px 8px; background:#448875; color:#fff; font-size:16px; text-decoration:none; display:block; width:160px; text-align:center; float:left; margin: 12px 6px 8px 0;}
+
+		#botao-post p {color:#333; float: left; padding: 5px 0 0 0;}
+
+		#botao-post span {color:#f08200; display:block; float:left; margin: 18px 6px 0 6px;}
+
+	#main {width:630px; float:left; overflow: hidden; padding:20px 0;}
+
+		#main-hm {width:660px; float:left; overflow: hidden; padding:20px 0;}
+
+	.single-prod {border-left:1px solid #6e6e6e; padding-left:18px;}
+
+		
+
+		.hentry { padding: 2.2em 20px 0; }
+
+		
+
+		.single-title, .page-title {}
+
+		.single-title {font: bold 28px Arial, Helvetica, sans-serif; color:#305148; margin: 12px 0 0 0}
+
+		.page-title {font: bold 28px Arial, Helvetica, sans-serif; color:#c95d1a; margin:-30px 0 10px 0; padding:0}
+
+		.archive_title { padding: 0 20px; margin: 1.1em 0 0.75em; }
+
+	
+
+		/* want to style individual post classes? Booya! */
+
+		.post-id {} /* post by id (i.e. post-3) */
+
+		.post {border-bottom: 1px solid #6e6e6e; min-height:145px;} /* general post style */
+
+		.page {} /* general article on a page style */
+
+		.attachment {} /* general style on an attatchment */
+
+		.sticky {} /* sticky post style */
+
+		.hentry {} /* hentry class */
+
+		.category-slug {} /* style by category (i.e. category-videos) */
+
+		.tag-slug {} /* style by tag (i.e. tag-news) */
+
+		.pages-int {border-left: 1px solid #333; min-height: 500px;}
+
+	
+
+		/* post meta */
+
+		
+
+		section.author-post {width:88px; height:141px; position:relative; float:left; margin:0; padding:0;}
+
+		img.photo {}
+
+		section.author-post time {position:absolute; top:6px; left:16px; font:bold 22px Arial, Helvetica, sans-serif; color:#fff;}
+
+			p.meta {font-size: 11px; color:#333; margin: 12px 0 6px 0;border-bottom: 1px solid #f6791f; padding-bottom: 12px}
+
+			p.meta a {color: #f6791f; }
+
+			
+
+		.author-page {overflow:auto; margin: 36px 0 0 0; }
+
+		h1.archive_title {font:bold 34px/35px Arial, Helvetica, sans-serif;padding:4px 18px; width: 590px; margin:0 0 24px 0}
+
+		article.author-info {margin-left: 18px; border-left: 2px solid #c95d1a; padding-left:12px}
+
+			article.author-info h3 {margin:0; padding:0; font:bold 14px Arial, Helvetica, sans-serif; color:#c95d1a}
+
+			article.author-info p {margin:4px 0 16px 0; font:12px Arial, Helvetica, sans-serif; color:#333; text-align:justify}
+
+			article.author-info a {color:#c95d1a;}
+
+		section.prod-com {background:#f5f5f5; width:621px; overflow: auto; padding:12px; margin-bottom:16px;}
+
+			section.prod-com h1 {font:bold 32px/34px Arial, Helvetica, sans-serif;padding:4px 11px; float:left; width: 470px; margin:0}
+
+			img.img-hm {margin: 6px; float:left;}
+
+			img.img-single {background:#f5f5f5; padding:20px; width:261px; height:261px;}
+
+		
+
+		#imgs-artesanato {clear:both; overflow: auto;}
+
+		#contato-author {background:url(http://artesol.org.br/rede/wp-content/uploads/2012/05/bg-contact.jpg) no-repeat top left; clear:both; position: relative; margin: 12px 6px 6px 6px; width:557px; height:128px; padding:16px;}
+
+			#contato-author h1 {font: bold 22px Arial, Helvetica, sans-serif; color:#fff; margin:0 0 6px 0; padding:0;}
+
+			#contato-author p {font: 12px Arial, Helvetica, sans-serif; color:#fff; margin:0;  text-align:justify; padding:4px 0; width: 420px; text-align:justify}
+
+		#artesol-contact {position: absolute; top:16px; right:16px; width: 120px; height: 100px;}
+
+			#artesol-contact p {font: 10px Arial, Helvetica, sans-serif; color:#fff; margin:0; padding:3px 0; width: 120px; text-align:justify}
+
+		/* post content */
+
+		.post_content {}
+
+		
+
+			article[role=article] {width: 600px; position:relative; margin-left:18px; padding:6px 0 0 0;}
+
+			article[role=article] h1.h2 {font:bold 28px/30px Arial, Helvetica, sans-serif;padding:4px 8px; float:left; width: 470px; margin:0}
+
+				article[role=article] h1.h2 a { padding:0; margin:0; color:#f08200;}
+
+				article[role=article] img.photo {padding: 0 6px 6px 0}
+
+			p.post-info {float:left; width: 495px; margin-left:10px; position:absolute; bottom: 0; left: 85px;}
+
+			
+
+			.post_content h1{font: bold 25px/25px Arial, Helvetica, sans-serif; color:#c95d1a; margin:10px 0; padding:0}	
+
+			.post_content p { margin: 10px 0; line-height: 1.5em;  text-align:justify }
+
+			.post_content ul, .post_content ol, .post_content table, .post_content dl { margin: 1.5em 0; }
+
+			.post_content ul, .post_content ol { list-style-position:outside; line-height:1.5; margin-left: 2.2em; margin-right: 2.2em; }
+
+			.post_content li { margin-bottom: 0.75em; }
+
+			.post_content ul li { list-style-type: disc; }
+
+			.post_content ol li { list-style-type: decimal; }
+
+
+
+			.post_content_comunidades ul, .post_content_comunidades ol { list-style:none; line-height:1.5; margin:0; width: 620px;}
+
+			.post_content_comunidades ul li {float: left; background:#f5f5f5; font-size:11px; margin: 1px; width: 178px; position: relative; height: 150px; padding: 6px;}
+
+				.post_content_comunidades ul li a {color:#448875; text-decoration:none; display:block; padding: 8px; position: absolute; bottom:0; left:0; background:url(img/bg-titles.png); width:174px; font-size: 13px; color:#fff; }
+
+				.post_content_comunidades ul li a:hover {background:#448875; color:#fff; text-decoration:none;}
+
+				.post_content_comunidades ul li img {margin-left:14px;}
+
+			
+
+			.post_content blockquote { width:200px; background: #c95d1a url(img/quote.jpg) no-repeat top left; color:#fff; font:bold 16px Arial, Helvetica, sans-serif; padding: 18px 6px 6px 18px; float: right; margin: 6px 0 12px 12px; }
+
+			.post_content blockquote:before { } /* this adds the quote before the blockquote */
+
+				.post_content blockquote p {text-align: left !important; }
+
+			
+
+			.post_content dl { margin:1.75em 0 1.75em; }
+
+			.post_content dt { margin-top: 1.25em; font-weight:700; }
+
+			.post_content dd { font-style: italic; margin-top:0.5em; line-height:1.6em; }
+
+			
+
+			.post_content img { margin: 0 0 1.5em 0; max-width: 100%; }
+
+			.alignleft, img.alignleft { margin-right: 1.5em; display: inline; float: left; }
+
+			.alignright, img.alignright { margin-left: 1.5em; display: inline; float: right; }
+
+			.aligncenter, img.aligncenter { margin-right: auto; margin-left: auto; display: block; clear: both; }
+
+			
+
+			.post_content video { margin: 1.5em 0; max-width: 100%; display: block; }
+
+			.post_content object { display: block; margin: 1.5em 0; max-width: 100%; }
+
+			.post_content pre, .post_content code { font-size: 0.9em; line-height: 1.7em; padding: 1em; background: #eee; border: 2px solid #cecece; }
+
+			
+
+			.wp-caption {background:#458876; text-align: left; padding: 12px; color:#fff; font-size:10px; margin-bottom: 16px; }
+
+			.wp-caption img { border: 0 none; padding: 0; margin: 0; }
+
+			.wp-caption .wp-caption-text { margin:3px 0 6px 0; padding:0}
+
+			
+
+			/* image gallery styles */
+
+			.gallery dl {}
+
+			.gallery dt {}
+
+			.gallery dd {}
+
+			.gallery dl a {}
+
+			.gallery dl img {}
+
+			.gallery-caption {}
+
+			
+
+			.size-full {}
+
+			.size-large {}
+
+			.size-medium {}
+
+			.size-thumbnail {}
+
+			
+
+		.hentry footer { clear: both; margin: 1.5em 0 0; padding-bottom: 2.2em; }
+
+	
+
+	
+
+/******************************************************************
+
+PAGE NAVI STYLES
+
+(Special Feature)
+
+******************************************************************/
+
+
+
+/* page navigation */
+
+.page-navigation {border-top: 1px solid #4e4e4e;border-bottom: 1px solid #4e4e4e;}
+
+.page-navigation, .wp-prev-next { margin: 1.1em 0 2.2em; }
+
+	.bones_page_navi, .wp-prev-next ul { }
+
+		.bones_page_navi li { float: left; margin-left: 10px; } 
+
+			.bones_page_navi li a { padding: 3px 6px; display: block; text-decoration: none; position: relative; }
+
+				.bones_page_navi li a:hover { color: #f01d4f; text-decoration: underline; }
+
+		.bones_page_navi li.bpn-current { padding: 3px 6px; border-bottom: 2px solid #f01d4f; position: relative; } /* current page link */
+
+				.bones_page_navi li.bpn-current:hover {}
+
+		.bones_page_navi li.bpn-prev-link { } /* previous link */
+
+			.bones_page_navi li.bpn-prev-link a { padding: 0; }
+
+				.bones_page_navi li.bpn-prev-link a:hover { background: none; }
+
+		.bones_page_navi li.bpn-next-link { font-weight: 700; } /* next page link */
+
+			.bones_page_navi li.bpn-next-link a { padding: 0; }
+
+				.bones_page_navi li.bpn-next-link a:hover { background: none; }
+
+		.bones_page_navi li.bpn-last-page-link {} /* last page link */
+
+			.bones_page_navi li.bpn-last-page-link a {}
+
+				.bones_page_navi li.bpn-last-page-link a:hover { background: none; }
+
+		.bones_page_navi li.bpn-first-page-link {} /* first page link */
+
+			.bones_page_navi li.bpn-first-page-link a {}
+
+				.bones_page_navi li.bpn-first-page-link a:hover { background: none; }
+
+	
+
+	/* fallback previous & next links */
+
+	.wp-prev-next {}
+
+		.wp-prev-next ul {}
+
+			.wp-prev-next .prev-link { float: left; }
+
+			.wp-prev-next .next-link { float: right; }
+
+
+
+	
+
+/******************************************************************
+
+COMMENT STYLES
+
+******************************************************************/
+
+
+
+#comments { margin: 0 20px 0.75em; font: bold 24px Arial, Helvetica, sans-serif; color:#458876 }/* h3 comment title */
+
+	#comments span { font-weight: 700; color: #1a90db; } /* number of comments span */
+
+	
+
+	img.photo {float: left;}
+
+	
+
+.comment-nav {}
+
+	.comment-nav ul {}
+
+		.comment-nav ul li {}
+
+		
+
+.commentlist { margin: 0 20px; }
+
+	.commentlist li { position: relative; clear: both; list-style-type: none; margin-bottom: 1.5em; padding: 0.7335em 10px; }
+
+		.commentlist li[class*=depth-] { padding-left: 20px; margin-top: 1.1em; }
+
+			.commentlist li.depth-1 { margin-left: 0; margin-top: 0; }
+
+				.commentlist li:not(.depth-1) { margin-right: -10px; margin-top: 0; padding-bottom: 0; }
+
+			.commentlist li.depth-2 {}
+
+			.commentlist li.depth-3 {}
+
+			.commentlist li.depth-4 {}
+
+			.commentlist li.depth-5 {}
+
+			.commentlist li:last-child { margin-bottom: 0; }
+
+				.commentlist li ul.children li {}
+
+				.commentlist li ul.children li.alt {}
+
+				.commentlist li ul.children li.byuser {}
+
+				.commentlist li ul.children li.comment {}
+
+				.commentlist li ul.children li.depth-1 {} /* change number for different depth */
+
+				.commentlist li ul.children li.bypostauthor {}
+
+				.commentlist li ul.children li.comment-author-admin {}
+
+				.commentlist li ul.children .alt {}
+
+				.commentlist li ul.children .odd {}
+
+				.commentlist li ul.children .even {}
+
+			.commentlist .alt {}
+
+			.commentlist .odd { background: #fdfdfd; border: 1px solid #b5b5b5; border-left:none; border-right:none;}
+
+			.commentlist .even { background: #f5f5f5; padding-bottom: 12px; border: 1px solid #b5b5b5;  }
+
+			.commentlist .parent {}
+
+			.commentlist .comment {}
+
+			.commentlist .children { border-left: 2px solid #f57720; }
+
+			.commentlist .pingback {}
+
+			.commentlist .bypostauthor {}
+
+			.commentlist .comment-author {}
+
+			.commentlist .comment-author-admin {}
+
+			.commentlist .thread-alt {}
+
+			.commentlist .thread-odd {}
+
+			.commentlist .thread-even {}	
+
+			
+
+			.commentlist .vcard { margin-left: 6px; float: left; width: 450px; }
+
+				.commentlist .vcard cite.fn { font-weight: 700; font-style: normal; }
+
+				.commentlist .vcard time {}
+
+					.commentlist .vcard time a { color: #999; text-decoration: none; }
+
+						.commentlist .vcard time a:hover { text-decoration: underline; }
+
+				.commentlist .vcard img.photo {}
+
+				.commentlist .vcard img.avatar { position: absolute; left: 20px; padding: 2px; border: 1px solid #cecece; background: #fff; }
+
+					.commentlist .vcard cite.fn a.url {color:#458876}
+
+				.commentlist .comment-meta {} 
+
+					.commentlist .comment-meta a {}
+
+				.commentlist .commentmetadata {}
+
+					.commentlist .commentmetadata a {}
+
+			.commentlist li .comment_content {width: 450px; overflow: auto; margin-left: 6px;}
+
+				.commentlist li .comment_content p { margin: 4px 0 8px 16px; font-size: 1em; line-height: 1.5em; }
+
+				.commentlist li .comment_content a {color:#f57720}
+
+				.commentlist li ul { margin: 0; }		
+
+				.commentlist .comment-reply-link { text-decoration: none; float: right;  background: #4598bb; padding: 3px 5px; color: #fff; opacity: 0.65; margin-bottom: 10px; font-weight: 700; font-size: 0.9em; }
+
+					.commentlist a.comment-reply-link:hover { opacity: 1; }
+
+			
+
+				
+
+/******************************************************************
+
+COMMENT FORM STYLES
+
+******************************************************************/
+
+
+
+.respond-form { margin: 1.5em 20px; padding-bottom: 2.2em; }
+
+	#comment-form-title { margin: 0 0 1.1em; }
+
+	
+
+	#cancel-comment-reply {}
+
+			#cancel-comment-reply a {}
+
+			
+
+	.respond-form form[method=post] { margin: 0.75em 0; }
+
+		
+
+		.comments-logged-in-as {color:#333;}
+
+		.comments-logged-in-as a {color:#f27920}
+
+		
+
+		.respond-form form[method=post] li { list-style-type: none; clear: both; margin-bottom: 0.7335em; }
+
+			.respond-form form[method=post] li label, .respond-form form[method=post] li small { display: none; }
+
+			.respond-form input[type=text], .respond-form input[type=email], .respond-form input[type=url], .respond-form textarea { padding: 3px 6px; background: #efefef; border: 2px solid #cecece; line-height: 1.5em; }
+
+			.respond-form input[type=text]:focus, .respond-form input[type=email]:focus, .respond-form input[type=url]:focus, .respond-form textarea:focus { background: #fff; }
+
+			.respond-form input[type=text], .respond-form input[type=email], .respond-form input[type=url] { max-width: 400px; min-width: 250px; }
+
+			
+
+			#allowed_tags { margin: 1.5em 10px 0.7335em 0; }
+
+			.respond-form textarea { resize: none; width: 97.3%; height: 150px; background:#fff; }
+
+			#submit {background:#458876; border: 1px solid #305148; font-size: 14px; color: #fff; padding: 6px 12px}
+
+		
+
+	/* form validation */
+
+	.respond-form input:invalid, .respond-form textarea:invalid { border-color: #fbc2c4; background: #fbe3e4; outline: none; box-shadow: none; -webkit-box-shadow: none; -moz-box-shadow: none; background-color: #f6e7eb; }		
+
+	
+
+	/* no comments */
+
+	.nocomments { margin: 0 20px 1.1em; }			
+
+
+
+/******************************************************************
+
+SIDEBARS & ASIDES
+
+******************************************************************/
+
+
+
+#sidebar1 {width:200px; float:left;}
+
+#sidebar2 {width:224px; float:left; margin: 20px 0 0 5px;}
+
+	.logos {background: url(img/logos.jpg) no-repeat 0 20px; width:141px; height:108px; clear:both; margin-left:55px;}
+
+	.logos2 {background: url(img/logos.jpg) no-repeat 0 20px; width:141px; height:108px; clear:both; margin-bottom:50px;}
+
+
+
+	.widget {padding: 0; margin: 0;}
+
+		.widget li { }
+
+		.widget li ul {}
+
+		
+
+		.widgettitle, #blogroll_widet_rss-2 h2 {background:url(img/hd-sidebar.jpg); width:185px; height:32px; margin:6px 0;font:bold 16px Arial, Helvetica, sans-serif; color:#fff; padding: 9px 0 0 25px}
+
+			.widgettitle a {color:#fff;}
+
+		a.rsswidget img {display:none;}
+
+		
+
+		#blogroll_widet_rss-2 ul {margin: 0 0 24px 0;}
+
+		#blogroll_widet_rss-2 ul li {font:12px Arial, Helvetica, sans-serif; margin:0; padding:0}
+
+			#blogroll_widet_rss-2 ul li a{text-decoration:none; color:#333; border-bottom:1px solid #91340b; padding: 4px 0 12px 0; margin-left:5px; display:block}
+
+			#blogroll_widet_rss-2 ul li a:hover{text-decoration:none; color:#91340b;}
+
+		
+
+		input#user_pass,input#user_login {clear:both; width:195px; border:1px solid #448875}
+
+		
+
+	/* links widget */
+
+	.widget_links {}
+
+	.widget_links ul {}
+
+	.widget_links ul li {}
+
+	.widget_links ul li a {}
+
+	
+
+	/* meta widget */
+
+	.widget_meta {}
+
+	.widget_meta ul {}
+
+	.widget_meta ul li {}
+
+	.widget_meta ul li a {}
+
+	
+
+	/* pages widget */
+
+	.widget_pages {}
+
+	.widget_pages ul {width: 207px;}
+
+	.widget_pages ul li {background:#f5f5f5; font-size:12px; margin: 2px; color:#448875; text-decoration:none; display:block; padding: 8px; }
+
+	.widget_pages ul li a {}
+
+	.widget_pages ul li:hover {background:#448875; color:#fff; text-decoration:none; cursor:pointer;}
+
+	.widget_pages ul li.current_page_item {background:#c95d1a; text-decoration:none;}
+
+		.widget_pages ul li.current_page_item a{color:#fff;}
+
+	.widget_pages ul li ul li {margin: 0 0 1px 0 !important; padding: 0 !important; width: 195px; font-size: 14px !important;}
+	
+
+	/* recent-posts widget */
+
+	.widget_recent_entries {}
+
+	.widget_recent_entries ul {}
+
+	.widget_recent_entries ul li {}
+
+	.widget_recent_entries ul li a {}
+
+	
+
+	/* archives widget */
+
+	.widget_archive {}
+
+	.widget_archive ul {}
+
+	.widget_archive ul li {} 
+
+	.widget_archive ul li a {}
+
+	.widget_archive select {}
+
+	.widget_archive option {}
+
+	
+
+	/* tag-cloud widget */
+
+	.widget_links {}
+
+	.widget_links li:after {}
+
+	.widget_links li:before {}
+
+	.widget_tag_cloud {}
+
+	.widget_tag_cloud a {}
+
+	.widget_tag_cloud a:after {}
+
+	.widget_tag_cloud a:before {}
+
+	
+
+	/* calendar widget */
+
+	.widget_calendar {}
+
+	#calendar_wrap {}
+
+	#calendar_wrap th {}
+
+	#calendar_wrap td {}
+
+	#wp-calendar tr td {}
+
+	#wp-calendar caption {}
+
+	#wp-calendar a {}
+
+	#wp-calendar #today {}
+
+	#wp-calendar #prev {}
+
+	#wp-calendar #next {}
+
+	#wp-calendar #next a {}
+
+	#wp-calendar #prev a {}
+
+	
+
+	/* category widget */
+
+	.widget_categories {}
+
+	.widget_categories ul {}
+
+	.widget_categories ul li {} 
+
+	.widget_categories ul ul.children {}
+
+	.widget_categories a {}
+
+	.widget_categories select{}
+
+	.widget_categories select#cat {}
+
+	.widget_categories select.postform {}
+
+	.widget_categories option {}
+
+	.widget_categories .level-0 {}
+
+	.widget_categories .level-1 {}
+
+	.widget_categories .level-2 {}
+
+	.widget_categories .level-3 {}
+
+	
+
+	/* recent-comments widget */
+
+	.recentcomments {}
+
+	#recentcomments {}
+
+	#recentcomments li {}
+
+	#recentcomments li a {}
+
+	.widget_recent_comments {}
+
+	
+
+	/* search widget */
+
+	#searchform {background:#f5f5f5; padding:16px 2px; margin: 0 0 0 6px; width:195px}
+
+		#searchform label {font: bold 16px Arial, Helvetica, sans-serif;  color:#448875; float: left; padding: 4px 0 0 5px;}
+
+		input#s {border:1px solid #9a9a9a; padding: 6px 4px; width: 100px; margin: 0 1px 0 3px;}
+
+		input#searchsubmit {border:1px solid #135c48; background:#448875;color:#fff; font-weight:bold; margin:0; padding:6px 3px;}
+
+	.widget_search {}
+
+	.screen-reader-text {}
+
+	
+
+	/* text widget */
+
+	.textwidget {}
+
+	.widget_text {}
+
+	.textwidget p {}
+
+	
+
+
+
+/******************************************************************
+
+FOOTER STYLES
+
+******************************************************************/
+
+
+
+footer[role=contentinfo] { width:930px; margin:0 auto; }
+
+
+
+	/* footer menu */
+
+	footer[role=contentinfo] nav {clear:both; margin: 0; }
+
+	.footer-links {}
+
+		.footer-links ul { margin-top: 0; }
+
+			.footer-links ul li { list-style-type: none; float: left; font-size: 0.9em; }
+
+				.footer-links ul li a { margin-right: 10px; text-decoration: underline; }
+
+					.footer-links ul li:last-child a { margin-right: 0; }
+
+			.footer-links ul li a:hover, .nav ul li.current-menu-item a, .nav ul li.current_page_item a {}
+
+			.footer-links ul li ul.sub-menu { display: none; } /* you shouldn't have that many links in the footer anyway so it's set to display none ;P */
+
+			
+
+	.attribution {padding:0; color: #333; font-size: 12px; margin-left: 40px; width: 862px !important;}
+
+		.attribution a {color:#000;}
+
+	
+
+/******************************************************************
+
+MEDIA QUERIES & DEVICE STYLES
+
+To use a responsive design, it's reccomended to use the responsive version of Bones. You can find it on github: https://github.com/eddiemachado/bones-responsive
+
+******************************************************************/
+
+
+
+@media only screen and (min-width: 480px) {
+
+	/* insert styles here */
+
+}
+
+
+
+@media only screen and (min-width: 768px) {
+
+/* insert styles here */
+
+}
+
+
+
+@media only screen and (min-width: 992px) {
+
+/* insert styles here */
+
+}
+
+
+
+@media only screen and (min-width: 1382px) {
+
+/* insert styles here */
+
+}
+
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+
+/* insert styles here */
+
+}
+
+
+
+/******************************************************************
+
+PRINT STYLES
+
+(Handled by default, but if you want to edit it, feel free)
+
+******************************************************************/
+
+
+
+@media print { }
+
+
+
+/******************************************************************
+
+IE SPECIFIC FIXES
+
+******************************************************************/
+
+
+
+/*
+
+Thanks to the HTML5 Boilerplate there's an easier way
+
+to target IE specific bugs. Simply use the html class
+
+to target the specific version of IE.
+
+
+
+To target the .post_content area in IE6, use:
+
+html.ie6 .post_content { ... }
+
+
+
+To target the .post_content area in IE7, use:
+
+html.ie7 .post_content { ... }
+
+
+
+To target the .post_content area in IE8, use:
+
+html.ie8 .post_content { ... }
+
+
+
+To target the .post_content area in older IE use:
+
+html.oldie .post_content { ... }
+
+
+
+Much easier right? This way, you don't have to call
+
+any more stylesheets, you can leave it at the bottom
+
+and it will overwrite depending on the html class.
+
+*/
+
+
+
+
+
+#carrossel {width:914px; height:248px; margin: 12px auto 2px auto; position:relative; padding:4px 18px 0 18px;}
+
+	#carrossel h1 {font: bold 27px Arial, Helvetica, sans-serif; color:#fff; margin: 12px 0 8px; padding:0}
+
+.sm {list-style:none; width:910px; height:180px; display:block; overflow:hidden; background:#fff; margin-top:4px;}
+
+.sm li {float:left; display:inline; overflow:hidden; position:relative;}
+
+.sm li img {}
+
+.sm li a.acc-title {position: absolute; bottom:20px; width:126px; left:4px; padding: 4px 8px; text-decoration:none; background: #4976b9; font:bold 14px Arial, Helvetica, sans-serif; color:#fff} 
+
+	.sm li a.acc-title:hover {background:#2f5b9d}
+
+.sm li span {background:url(img/bg-left-accordion.png) repeat-y; height:180px; width:15px; position: absolute; top:0; right:0;}
+
+
+
+h3.term-heading {font: bold 28px Arial, Helvetica, sans-serif; color:#c95d1a; margin:0; padding:0}
+
+h3.term-heading-2 {font: bold 24px Arial, Helvetica, sans-serif; color:#458876; margin:12px 0 8px 12px; clear:both; padding:0}
+
+
+
+ul.list-prod-page {background:#f5f5f5; border:1px solid #b5b5b5; overflow: auto; clear:both; list-style:none; padding: 6px; margin: 0 0 24px 0; -webkit-border-radius: 12px; -moz-border-radius: 12px; border-radius: 12px;}
+
+ul.list-prod-page li {float: left; padding:7px; position: relative;}
+
+	a.link-to-term{color:#c95d1a; margin-left: 6px; clear:both; width: 500px; display:block;}
+
+	
+
+a.list-prod-title, span.list-prod-title {position: absolute; bottom: 12px; height: 30px; left: 7px; background:url(img/bg-titles.png); padding: 4px 8px; font: 12px Arial, Helvetica, sans-serif; color:#fff; text-decoration:none; width: 124px;}
+
+a.a-prod-list {width:140px; height:140px; background: url(img/bg-prod-shadow.png) no-repeat center; position: absolute; top:7px; left:7px;}
+
+	a.a-prod-list:hover {width:132px; height:132px; border: 4px solid #48699a; }
+
+
+
+.prod-author-camp {width: 595px; background:#f5f5f5; border:1px solid #b5b5b5; overflow: auto; padding: 8px; margin: 12px 0; -webkit-border-radius: 12px; -moz-border-radius: 12px; border-radius: 12px;}
+
+	.prod-author-camp a.link-author {color:#c95d1a; margin-left: 6px; clear:both; width: 500px; display:block;}
+
+.prod-list-author {position:relative; width:140px; height:150px; padding: 7px 0 0 7px; float: left;}
+
+h1.h1-author, h1.h1-author a {font-size:32px; clear:both;}
