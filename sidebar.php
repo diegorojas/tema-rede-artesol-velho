@@ -14,7 +14,7 @@
 						<style>
 							ul#redes-sociais {overflow: auto; list-style: none; margin: 10px 0; padding: 0; margin-left: 25px;}
 							ul#redes-sociais li {float: left; width:34px; height: 41px; margin-right: 5px;}
-							ul#redes-sociais li a {width: 45px; height: 40px; display: block; background:url(http://artesol.org.br/rede/wp-content/themes/artesol/img/redesocial.jpg) no-repeat 0 0;}
+							ul#redes-sociais li a {width: 45px; height: 40px; display: block; background:url(http://artesol.org.br/rede-velho/wp-content/themes/artesol/img/redesocial.jpg) no-repeat 0 0;}
 							ul#redes-sociais li.facebook a {background-position: -40px 0;}
 							ul#redes-sociais li.twitter a {background-position: 0px 0;}
 							ul#redes-sociais li.instagram a {background-position: -82px 0;}

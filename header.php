@@ -73,7 +73,7 @@
 	<header role="banner">
 			
 				<div id="inner-header" class="clearfix">
-                	<a href="http://www.artesol.org.br/site/rede/" target="_self" class="back-artesol">← VOLTAR PARA PÁGINA DA REDE ARTESOL</a>
+                	<a href="http://www.artesol.org.br/rede/" target="_self" class="back-artesol">← VOLTAR PARA PÁGINA DA REDE ARTESOL</a>
 					<a href="<?php echo home_url(); ?>" rel="nofollow" class="logo"></a>	
         			<div class="realizacao">
   <a href="http://artesol.org.br" target="_blank" style="display:block;height: 79px;"></a>
